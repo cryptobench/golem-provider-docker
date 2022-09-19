@@ -1,0 +1,10 @@
+{
+  "active": "default",
+  "profiles": {
+    "default": {
+      "cpu_threads": 1,
+      "mem_gib": 42.89231076836586,
+      "storage_gib": 157.22521057128907
+    }
+  }
+}

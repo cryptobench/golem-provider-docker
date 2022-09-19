@@ -1,0 +1,36 @@
+{
+  "ver": "V1",
+  "active": [
+    "wasmtime",
+    "vm"
+  ],
+  "presets": [
+    {
+      "name": "default",
+      "exeunit-name": "wasmtime",
+      "pricing-model": "linear",
+      "initial-price": 0.0,
+      "usage-coeffs": {}
+    },
+    {
+      "name": "vm",
+      "exeunit-name": "vm",
+      "pricing-model": "linear",
+      "initial-price": 0.0,
+      "usage-coeffs": {
+        "golem.usage.cpu_sec": 2.7777777777777784e-8,
+        "golem.usage.duration_sec": 0.0
+      }
+    },
+    {
+      "name": "wasmtime",
+      "exeunit-name": "wasmtime",
+      "pricing-model": "linear",
+      "initial-price": 0.0,
+      "usage-coeffs": {
+        "golem.usage.duration_sec": 0.0,
+        "golem.usage.cpu_sec": 2.7777777777777784e-8
+      }
+    }
+  ]
+}
