@@ -4,10 +4,10 @@ import os
 
 if __name__ == "__main__":
     # generate globals file
-    parent_folder = "~/.local/share/ya-provider/"
-    globals_path = "~/.local/share/ya-provider/globals.json"
-    hardware_path = "~/.local/share/ya-provider/hardware.json"
-    presets_path = "~/.local/share/ya-provider/presets.json"
+    parent_folder = "/root/.local/share/ya-provider/"
+    globals_path = "/root/.local/share/ya-provider/globals.json"
+    hardware_path = "/root/.local/share/ya-provider/hardware.json"
+    presets_path = "/root/.local/share/ya-provider/presets.json"
 
     if not os.path.exists(parent_folder):
         os.mkdir(parent_folder)
