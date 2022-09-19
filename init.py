@@ -44,9 +44,9 @@ if __name__ == "__main__":
                     "pricing-model": "linear",
                     "usage-coeffs": {
                         "initial": float(os.environ.get("NODE_COSTS_START", 0)),
-                        "duration": float(os.environ.get("NODE_COSTS_HOUR", 0.02))
+                        "duration": float(os.environ.get("NODE_COSTS_HOUR", 0))
                         / 3600,
-                        "cpu": float(os.environ.get("NODE_COSTS_CPU_HOUR", 0.1)) / 3600,
+                        "cpu": float(os.environ.get("NODE_COSTS_CPU_HOUR", 0.008)) / 3600,
                     },
                 },
                 {
@@ -55,9 +55,9 @@ if __name__ == "__main__":
                     "pricing-model": "linear",
                     "usage-coeffs": {
                         "initial": float(os.environ.get("NODE_COSTS_START", 0)),
-                        "duration": float(os.environ.get("NODE_COSTS_HOUR", 0.02))
+                        "duration": float(os.environ.get("NODE_COSTS_HOUR", 0))
                         / 3600,
-                        "cpu": float(os.environ.get("NODE_COSTS_CPU_HOUR", 0.1)) / 3600,
+                        "cpu": float(os.environ.get("NODE_COSTS_CPU_HOUR", 0.008)) / 3600,
                     },
                 },
                 {
@@ -66,9 +66,9 @@ if __name__ == "__main__":
                     "pricing-model": "linear",
                     "usage-coeffs": {
                         "initial": float(os.environ.get("NODE_COSTS_START", 0)),
-                        "duration": float(os.environ.get("NODE_COSTS_HOUR", 0.02))
+                        "duration": float(os.environ.get("NODE_COSTS_HOUR", 0))
                         / 3600,
-                        "cpu": float(os.environ.get("NODE_COSTS_CPU_HOUR", 0.1)) / 3600,
+                        "cpu": float(os.environ.get("NODE_COSTS_CPU_HOUR", 0.008)) / 3600,
                     },
                 },
             ],
