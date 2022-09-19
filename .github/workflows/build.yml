@@ -14,11 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
 
-      - name: Dotenv Action
-        uses: falti/dotenv-action@v0.2.8
-
       - name: Git clone on our repo
         uses: actions/checkout@v2
+
+      - name: Dotenv Action
+        uses: falti/dotenv-action@v0.2.8
 
       - name: Login to Dockerhub
         run: make login
