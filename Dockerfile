@@ -38,6 +38,7 @@ ARG YA_DIR_BIN_TMP
 ARG YA_DIR_PLUGINS
 RUN apt-get update -q \
     && apt-get install -q -y --no-install-recommends ca-certificates \
+    python3 \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 COPY --from=installer ${YA_DIR_PLUGINS} ${YA_DIR_PLUGINS}
