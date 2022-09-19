@@ -17,5 +17,5 @@ push-amd64:
 
 
 login:
-	@docker login ghcr.io -u ${DOCKER_USER} -p ${DOCKER_PASS}
+	@docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}
 	
