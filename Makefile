@@ -5,13 +5,13 @@ LATEST_PROVIDER := ${PROVIDER}:${VERSION}
 
 
 
-build-amd64:
+build:
 	@docker build -t ${IMG_PROVIDER} -t ${PROVIDER_LATEST_LOCAL} .
 	@docker tag ${IMG_PROVIDER} ${LATEST_PROVIDER}
 
 	@docker tag ${PROVIDER_LATEST_LOCAL} ${PROVIDER}:latest
 
-push-amd64:
+push:
 	@docker push ${LATEST_PROVIDER}
 	@docker push ${PROVIDER}:latest
 
