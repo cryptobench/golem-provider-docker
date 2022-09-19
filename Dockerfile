@@ -44,5 +44,5 @@ COPY --from=installer ${YA_DIR_PLUGINS} ${YA_DIR_PLUGINS}
 COPY --from=installer ${YA_DIR_BIN_TMP} ${YA_DIR_BIN}
 
 COPY ya-provider/ /root/.local/share/ya-provider/
-
-CMD ["golemsp", "run"]
+COPY ./init.py /generate-presets.py
+CMD ["python3", "/generate-presets.py", "&&", "golemsp", "run"]
