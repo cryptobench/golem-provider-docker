@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  provider:
+    build: .
+    restart: always
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    devices:
+      - /dev/kvm:/dev/kvm
+    env_file:
+      - .env
