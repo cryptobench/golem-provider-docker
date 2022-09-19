@@ -6,6 +6,7 @@ services:
     restart: always
     volumes:
       - /etc/localtime:/etc/localtime:ro
+      - golem-provider:/root/
     devices:
       - /dev/kvm:/dev/kvm
     env_file:
