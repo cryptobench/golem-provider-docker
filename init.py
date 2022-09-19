@@ -25,9 +25,9 @@ if __name__ == "__main__":
             "active": "default",
             "profiles": {
                 "default": {
-                    "cpu_threads": int(os.environ.get("NODE_CPU_THREADS", "null")),
-                    "mem_gib": float(os.environ.get("NODE_MEM_GIB", "null")),
-                    "storage_gib": float(os.environ.get("NODE_STORAGE_GIB", "null")),
+                    "cpu_threads": int(os.environ.get("NODE_CPU_THREADS", "1")),
+                    "mem_gib": float(os.environ.get("NODE_MEM_GIB", "1.00")),
+                    "storage_gib": float(os.environ.get("NODE_STORAGE_GIB", "1.00")),
                 }
             },
         }
