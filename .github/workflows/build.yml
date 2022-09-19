@@ -28,4 +28,4 @@ jobs:
         run: VERSION=${{ steps.dotenv.outputs.version }} make build
 
       - name: Push Containers
-        run: make push
+        run: VERSION=${{ steps.dotenv.outputs.version }} make push
