@@ -46,4 +46,4 @@ COPY --from=installer ${YA_DIR_BIN_TMP} ${YA_DIR_BIN}
 
 COPY ya-provider/ /root/.local/share/ya-provider/
 COPY ./init.py /generate-presets.py
-CMD ["/bin/bash", "-c", "python3 /generate-presets.py && golemsp run"]
+CMD ["/bin/bash", "-c", "python3 /generate-presets.py && golemsp run && tail -f /dev/null"]
