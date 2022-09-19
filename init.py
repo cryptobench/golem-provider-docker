@@ -16,7 +16,7 @@ if __name__ == "__main__":
         data = {
             "node_name": os.environ.get("NODE_NAME", "docker-provider"),
             "subnet": os.environ.get("NODE_SUBNET", "public-beta"),
-            "account": os.environ.get("YA_ACCOUNT", "null"),
+            "account": os.environ.get("YA_ACCOUNT", None),
         }
         json.dump(data, f, indent=4)
 
