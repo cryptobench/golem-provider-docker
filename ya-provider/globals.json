@@ -1,5 +1,5 @@
 {
-  "node_name": "phillip",
+  "node_name": "docker-provider",
   "subnet": "public-beta",
   "account": null
 }
