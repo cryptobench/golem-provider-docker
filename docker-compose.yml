@@ -8,5 +8,3 @@ services:
       - /etc/localtime:/etc/localtime:ro
     devices:
       - /dev/kvm:/dev/kvm
-    env_file:
-      - .env
